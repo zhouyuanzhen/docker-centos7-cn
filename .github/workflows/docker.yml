@@ -20,4 +20,5 @@ jobs:
         run: |
           docker build . -t centos7cn:0.1.0
       - name: docker push image
+        run: |
           docker push zyz82/centos7cn:0.1.0
