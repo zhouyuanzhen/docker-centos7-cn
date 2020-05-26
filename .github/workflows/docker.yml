@@ -18,7 +18,7 @@ jobs:
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
       - name: docker build image
         run: |
-          docker build . -t zyz82/centos7cn:0.1.0
+          docker build . -t zyz82/centos7cn:latest
       - name: docker push image
         run: |
-          docker push zyz82/centos7cn:0.1.0
+          docker push zyz82/centos7cn:latest
